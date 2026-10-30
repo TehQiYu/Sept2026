@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <h2>Login Page</h2>
+
+    <form id="loginForm">
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="myInput">Password:</label><br>
+        <input type="password" id="myInput">
+        <br>
+
+        <input type="checkbox" id="showPassword"
+               onclick="myFunction()">
+        Show Password
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <h3>Output:</h3>
+    <p id="message"></p>
+
+    <script>
+
+        // Function 1: Show or hide password
+        function myFunction() {
+            var x = document.getElementById("myInput");
+
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+        // Function 2: Check login information
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("myInput").value;
+            var message = document.getElementById("message");
+
+            if (username === "" || password === "") {
+                message.textContent = "Please enter your username and password!";
+                message.style.color = "orange";
+            }
+            else if (username === "admin" && password === "123456") {
+                message.textContent = "Login Successful! Welcome, " + username + "!";
+                message.style.color = "green";
+            }
+            else {
+                message.textContent = "Incorrect username or password!";
+                message.style.color = "red";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
