@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Form - Text Input</title>
+
+<link rel=icon href=sunflower.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+</head>
+<body topmargin="50">
+<style>
+    body {
+        .fname{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .lname{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .gender{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .fav_sub{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .address{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .dob{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .loginpass{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+        .course{
+            background-color: #696969;
+            color: azure;
+            font-family: 'Times New Roman';
+        }
+    }
+</style>
+<center>
+    <h1>Personal details:</h1>
+    <form>
+        <table cellpadding="15" style="background-color: powderblue; color: #696969; font-family: 'Times New Roman'; width: 60%;">
+            <tr>
+                <td class="fname"><label for="fname">First Name:</label></td>
+                <td><input type="text" id="fname" name="fname" value="Name" size="50" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td class="lname"><label for="lname">Last Name:</label></td>
+                <td><input type="text" id="lname" name="lname" placeholder="Last name" autofocus></td>
+            </tr>
+            <tr>
+                <td class="gender">Gender:</td>
+                <td>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="fav_sub">Choose your Favourite subjects:</td>
+                <td>
+                    <label><input type="checkbox" name="fav_sub" value="DCS4103" checked> DCS4103</label>
+                    <label><input type="checkbox" name="fav_sub" value="DCS3003" disabled> DCS3003</label>
+                    <label><input type="checkbox" name="fav_sub" value="MST1003"> MST1003</label>
+                    <label><input type="checkbox" name="fav_sub" value="MST2003"> MST2003</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="address"><label for="address">Address:</label></td>
+                <td><textarea id="address" rows="4" cols="30" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td class="dob"><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" min="2000-01-01" max="2005-12-31"></td>
+            </tr>
+            <tr>
+                <td class="loginpass"><label for="loginpass">Login password:</label></td>
+                <td><input type="password" id="loginpass" name="loginpass" readonly></td>
+            </tr>
+            <tr>
+                <td class="course"><label for="course">Course:</label></td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="0">- List of Courses -</option>
+                        <optgroup label="Diploma in Computer Science">
+                            <option value="DCS_S1">Semester 1</option>
+                            <option value="DCS_S2">Semester 2</option>
+                            <option value="DCS_S3">Semester 3</option>
+                            <option value="DCS_S4">Semester 4</option>
+                            <option value="DCS_S5">Semester 5</option>
+                            <option value="DCS_S6">Semester 6</option>
+                        </optgroup>
+                        <option value="DIB">Diploma in Business</option>
+                        <option value="DAS">Diploma in Airline Services</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+    </form>
+</center>
+</body>
+</html>

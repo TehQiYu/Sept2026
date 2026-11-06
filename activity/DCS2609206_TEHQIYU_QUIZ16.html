@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head><title>Form - Text Input</title>
+<link rel="icon" href="3881.jpg" type="image/jpg">
+<link rel="stylesheet" href="activity8c.css">
+<script>
+    function validateForm() {
+       // to validate text - do not allow empty
+       let x = document.MyFirstForm.fname.value;
+       if (x == "") {
+              alert("Please provide your first name");
+              return false;
+         }
+        // to validate text - only allow alphabet characters
+        let y = document.MyFirstForm.lname.value;
+        var letters = /^[A-Za-z]+$/;
+        if(!y.match(letters)) {
+            alert("Please input alphabet characters for Last Name");
+            return false;
+        }
+        if (( MyFirstForm.gender[0].checked == false ) && ( MyFirstForm.gender[1].checked == false )) {
+            alert("Please Choose Gender: Male or Female");
+            return false;
+        }
+        if (( MyFirstForm.fav_sub[0].checked == false ) && ( MyFirstForm.fav_sub[1].checked == false ) && ( MyFirstForm.fav_sub[2].checked == false )&& ( MyFirstForm.fav_sub[3].checked == false )) {
+            alert("No checkbos is checked");
+            return false;
+        }
+    }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin-top: 50px;">
+<form name="MyFirstForm" onsubmit="return validateForm()">
+<div style="background-color: powderblue;
+color:#696969;
+font-family:verdana;
+font-size: 60%;
+text-align: center;
+width: 100%;
+height: 100%;">
+<table style="text-align: center;" border=1>
+<th colspan="2" style="text-align: center; font-size: 120%;">
+DSC3003 website design course survey 
+</th>
+<tr>    
+<td>
+    <table align="center" style="margin-top: 20px;margin-left: 20px;" border="1" >
+    <tr>
+        <td colspan="2">Personal Detail</td>
+    </tr>
+    <tr>
+        <td>Student ID : <input = type=text name =SID size=10 maxlength=10></td>
+        <td>Student Name : <input = type=text name =fname size=10 maxlength=20></td>
+    </tr>
+    <tr>
+        <td>Email address :<input = type=text name =email size=10 maxlength=50></td>
+        <td>IC No:<input = type=text name =icn size=10 maxlength=50></td>
+    </tr>
+    <tr>
+        <td>Course:<select name="course">
+            <option value="0">- List of Courses</option>
+            <optgroup label="Diploma In Computer Science">
+            <option value="DCS_S1">Semester 1</option>
+            <option value="DCS_S2">Semester 2</option>
+            <option value="DCS_S3">Semester 3</option>
+            <option value="DCS_S4">Semester 4</option>
+            <option value="DCS_S5">Semester 5</option>
+            <option value="DCS_S6">Semester 6</option>
+            </optgroup>
+
+            <option value="DIB">Diploma in Business</option>
+            <option value="DAS">Diploma in Airline Services</option>
+            </select></td>
+        <td>D.O.B:<input type="date" name="dob"></td>
+    </tr>
+</table>
+</td></tr>
+<br>
+<tr><td>
+<table border=1>
+    <tr>
+        <td align="left">
+        <h6>Questions <br>Please answer all questions</h6>
+        </td>
+    </tr>
+    <tr >
+        <td align="left"> 1) Have you grasped the content of the Website Design so far ?</td>
+        <td align="left"><input type="radio" name="Q1" value="YES">YES<br> <input type="radio" name="Q2" value="NO">NO</td>
+    </tr>
+    <tr>
+        <td align="left"> 2) Can you now create a simple but interactive website?</td>
+        <td align="left"><input type="radio" name="Q1" value="YES">YES <br><input type="radio" name="Q2" value="NO">NO</td>
+    </TR>
+    <tr>
+        <td align="left"> 3) What have you learn so far?</td>
+        <td align="left"><input type="checkbox" name="lrn" value="Knowledge" >Knowledge<br>
+            <input type="checkbox" name="lrn" value="Practical skills" >Practical Skills<br>
+            <input type="checkbox" name="lrn" value="Problem solving ">Problem solving<br>
+            <input type="checkbox" name="lrn" value="Slef-Exploration skill">Self-Exploration Skills<br>
+        </td>
+    </tr>
+    <tr>
+        <td align="left" colspan="2"> 4) Wish items / suggestions</td>
+    <br>
+    </tr>
+    <tr>
+        <td colspan="2" align="left"><textarea rows="4" cols="30" name="address"></textarea></td>
+    </tr></td>
+    </table>
+    </tr>
+    <br>
+    
+</table>
+<input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</center>
+</body></html>
