@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Aspec</title>
+<meta name="description" content="Get in touch with Aspec for product help, orders and support.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="container nav">
+  <a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</div></header>
+
+<main>
+<div class="page-head"><div class="container">
+  <span class="eyebrow">Contact</span>
+  <h1 style="font-size:clamp(2rem,4.5vw,3.2rem)">We'd love to hear from you</h1>
+  <p class="lead">Questions about an order, a product or a bulk purchase? Send us a message.</p>
+</div></div>
+
+<section style="padding-top:44px"><div class="container contact-grid">
+  <div class="form-card">
+    <h2 style="font-size:1.6rem">Send a message</h2>
+    <form id="contact-form" novalidate style="margin-top:22px">
+      <div class="row2">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name"><div class="err" id="err-name"></div></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com"><div class="err" id="err-email"></div></div>
+      </div>
+      <div class="field"><label for="topic">Topic</label>
+        <select id="topic" name="topic"><option>Order enquiry</option><option>Product advice</option><option>Warranty / returns</option><option>Bulk / business orders</option><option>Other</option></select></div>
+      <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="How can we help?"></textarea><div class="err" id="err-message"></div></div>
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <div id="form-msg" class="form-msg" role="status"></div>
+    </form>
+  </div>
+  <aside class="info-card">
+    <h2 style="font-size:1.6rem;margin-bottom:24px">Get in touch</h2>
+    <div class="info-item"><div class="ico">✉️</div><div><strong>Email</strong><p>hello@aspec.my</p></div></div>
+    <div class="info-item"><div class="ico">📞</div><div><strong>Phone</strong><p>+60 7-123 4567</p></div></div>
+    <div class="info-item"><div class="ico">📍</div><div><strong>Address</strong><p>12 Jalan Teknologi, Johor Bahru, Johor, Malaysia</p></div></div>
+    <div class="info-item"><div class="ico">🕘</div><div><strong>Hours</strong><p>Mon–Fri, 9am – 6pm (GMT+8)</p></div></div>
+  </aside>
+</div></section>
+
+</main>
+
+<footer class="site"><div class="container">
+  <div class="foot-grid">
+    <div><a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a><p>Premium computer accessories for people who care about their setup.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="products.html#keyboards">Keyboards</a></li><li><a href="products.html#mice">Mice</a></li><li><a href="products.html#audio">Audio</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>hello@aspec.my</li><li>+60 7-123 4567</li><li>Mon–Fri, 9am–6pm</li></ul></div>
+  </div>
+  <div class="copy"><span>© <span class="year">2026</span> Aspec. All rights reserved.</span><span>Made for your desk.</span></div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop – Aspec Computer Accessories</title>
+<meta name="description" content="Browse Aspec keyboards, mice, headsets, USB-C hubs, stands and storage.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="container nav">
+  <a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</div></header>
+
+<main>
+<div class="page-head"><div class="container">
+  <span class="eyebrow">Shop</span>
+  <h1 style="font-size:clamp(2rem,4.5vw,3.2rem)">All products</h1>
+  <p class="lead">Pick a category to filter, or browse everything below.</p>
+</div></div>
+
+<section style="padding-top:36px"><div class="container shop">
+
+
+  <div class="product-grid">
+
+    <!-- ================= PRODUCT 1 ================= -->
+    <article class="product" data-cat="keyboards">
+      <div class="p-img">
+        <img src="images/forge-75-keyboard.jpg" alt="Aspec Forge 75 Keyboard">
+      </div>
+      <div class="p-body">
+        <span class="p-cat">Keyboards</span>
+        <h3>Aspec Forge 75 Keyboard</h3>
+        <p class="p-desc">Hot-swappable 75% mechanical keyboard with gasket mount and PBT keycaps.</p>
+        <div class="p-foot"><span class="price">RM 329</span><button class="btn btn-primary btn-sm" onclick="addToCart(1)">Add to cart</button></div>
+      </div>
+    </article>
+
+    <!-- ================= PRODUCT 2 ================= -->
+    <article class="product" data-cat="keyboards">
+      <div class="p-img">
+        <img src="images/lite-60-keyboard.jpg" alt="Aspec Lite 60 Wireless Keyboard">
+      </div>
+      <div class="p-body">
+        <span class="p-cat">Keyboards</span>
+        <h3>Aspec Lite 60 Wireless</h3>
+        <p class="p-desc">Compact 60% Bluetooth/2.4GHz board with up to 120 hours of battery life.</p>
+        <div class="p-foot"><span class="price">RM 219</span><button class="btn btn-primary btn-sm" onclick="addToCart(2)">Add to cart</button></div>
+      </div>
+    </article>
+
+    <!-- ================= PRODUCT 3 ================= -->
+    <article class="product" data-cat="mice">
+      <div class="p-img">
+        <img src="images/glide-pro-mouse.jpg" alt="Aspec Glide Pro Mouse">
+      </div>
+      <div class="p-body">
+        <span class="p-cat">Mice</span>
+        <h3>Aspec Glide Pro Mouse</h3>
+        <p class="p-desc">59g ultralight wireless gaming mouse with a 26K DPI sensor.</p>
+        <div class="p-foot"><span class="price">RM 189</span><button class="btn btn-primary btn-sm" onclick="addToCart(3)">Add to cart</button></div>
+      </div>
+    </article>
+
+    <!-- ================= PRODUCT 4 ================= -->
+    <article class="product" data-cat="mice">
+      <div class="p-img">
+        <img src="images/flow-ergo-mouse.jpg" alt="Aspec Flow Ergo Mouse">
+      </div>
+      <div class="p-body">
+        <span class="p-cat">Mice</span>
+        <h3>Aspec Flow Ergo Mouse</h3>
+        <p class="p-desc">Vertical ergonomic mouse that keeps your wrist neutral all day.</p>
+        <div class="p-foot"><span class="price">RM 149</span><button class="btn btn-primary btn-sm" onclick="addToCart(4)">Add to cart</button></div>
+      </div>
+    </article>
+
+    <!-- ================= PRODUCT 5 ================= -->
+    <article class="product" data-cat="audio">
+      <div class="p-img">
+      <img src="images/pulse-headset.jpg" alt="Aspec Pulse Headset">
+      </div>
+      <div class="p-body">
+        <span class="p-cat">Audio</span>
+        <h3>Aspec Pulse Headset</h3>
+        <p class="p-desc">Wireless headset with 50mm drivers, ANC and a detachable boom mic.</p>
+        <div class="p-foot"><span class="price">RM 259</span><button class="btn btn-primary btn-sm" onclick="addToCart(5)">Add to cart</button></div>
+      </div>
+    </article>
+
+    <!-- ================= PRODUCT 6 ================= -->
+    <article class="product" data-cat="audio">
+      <div class="p-img">
+      <img src="images/buds-air.jpg" alt="Aspec Buds Air">
+      </div>
+      <div class="p-body">
+        <span class="p-cat">Audio</span>
+        <h3>Aspec Buds Air</h3>
+        <p class="p-desc">Low-latency earbuds with 30-hour case battery and USB-C charging.</p>
+        <div class="p-foot"><span class="price">RM 139</span><button class="btn btn-primary btn-sm" onclick="addToCart(6)">Add to cart</button></div>
+      </div>
+    </article>
+  </div><!-- /product-grid -->
+</div></section>
+</main>
+
+<footer class="site"><div class="container">
+  <div class="foot-grid">
+    <div><a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a><p>Premium computer accessories for people who care about their setup.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="products.html#keyboards">Keyboards</a></li><li><a href="products.html#mice">Mice</a></li><li><a href="products.html#audio">Audio</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>hello@aspec.my</li><li>+60 7-123 4567</li><li>Mon–Fri, 9am–6pm</li></ul></div>
+  </div>
+  <div class="copy"><span>© <span class="year">2026</span> Aspec. All rights reserved.</span><span>Made for your desk.</span></div>
+</div></footer>
+<!-- script.js is only used for the cart drawer and mobile menu – the product list itself is plain HTML/CSS -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart – Aspec</title>
+<meta name="description" content="Review the items in your Aspec shopping cart.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="container nav">
+  <a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</div></header>
+
+<main>
+<div class="page-head"><div class="container">
+  <span class="eyebrow">Step 1 of 2</span>
+  <h1 style="font-size:clamp(2rem,4.5vw,3.2rem)">Your shopping cart</h1>
+  <p class="lead">Review your items, adjust quantities and apply a promo code.</p>
+</div></div>
+
+<section style="padding-top:40px"><div class="container cart-layout">
+  <!-- Cart items are drawn here from the saved cart -->
+  <div id="cart-lines"></div>
+  <!-- Order summary (subtotal, promo, shipping, total) -->
+  <aside class="summary" id="summary" data-mode="cart"></aside>
+</div></section>
+</main>
+
+<footer class="site"><div class="container">
+  <div class="foot-grid">
+    <div><a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a><p>Premium computer accessories for people who care about their setup.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="products.html#keyboards">Keyboards</a></li><li><a href="products.html#mice">Mice</a></li><li><a href="products.html#audio">Audio</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>hello@aspec.my</li><li>+60 7-123 4567</li><li>Mon–Fri, 9am–6pm</li></ul></div>
+  </div>
+  <div class="copy"><span>© <span class="year">2026</span> Aspec. All rights reserved.</span><span>Made for your desk.</span></div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

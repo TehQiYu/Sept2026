@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout – Aspec</title>
+<meta name="description" content="Enter your delivery and payment details to complete your Aspec order.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="container nav">
+  <a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count">0</span></button>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</div></header>
+
+<main>
+<div class="page-head"><div class="container">
+  <span class="eyebrow">Step 2 of 2</span>
+  <h1 style="font-size:clamp(2rem,4.5vw,3.2rem)">Checkout</h1>
+  <p class="lead">Almost there – tell us where to send your order.</p>
+</div></div>
+
+<section style="padding-top:40px"><div class="container">
+
+  <!-- Shown after the order is placed -->
+  <div id="order-done" class="order-done" style="display:none"></div>
+
+  <form id="checkout-form" class="checkout-layout" novalidate>
+    <div>
+      <div class="co-card">
+        <h3>1. Contact details</h3>
+        <div class="row2">
+          <div class="field"><label for="fullname">Full name</label><input id="fullname" name="fullname" type="text" autocomplete="name"><div class="err" id="err-fullname"></div></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com"><div class="err" id="err-email"></div></div>
+        </div>
+        <div class="field" style="margin-bottom:0"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+60 12-345 6789"><div class="err" id="err-phone"></div></div>
+      </div>
+
+      <div class="co-card">
+        <h3>2. Delivery address</h3>
+        <div class="field"><label for="address">Street address</label><input id="address" name="address" type="text" autocomplete="street-address" placeholder="Unit, street, area"><div class="err" id="err-address"></div></div>
+        <div class="row3">
+          <div class="field" style="margin-bottom:0"><label for="city">City</label><input id="city" name="city" type="text" autocomplete="address-level2"><div class="err" id="err-city"></div></div>
+          <div class="field" style="margin-bottom:0"><label for="postcode">Postcode</label><input id="postcode" name="postcode" type="text" inputmode="numeric" maxlength="5" autocomplete="postal-code"><div class="err" id="err-postcode"></div></div>
+          <div class="field" style="margin-bottom:0"><label for="state">State</label>
+            <select id="state" name="state" autocomplete="address-level1">
+              <option value="">Select…</option>
+              <option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Kuala Lumpur</option><option>Labuan</option><option>Melaka</option><option>Negeri Sembilan</option><option>Pahang</option><option>Penang</option><option>Perak</option><option>Perlis</option><option>Putrajaya</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option><option>Terengganu</option>
+            </select><div class="err" id="err-state"></div></div>
+        </div>
+      </div>
+
+      <div class="co-card">
+        <h3>3. Payment method</h3>
+        <label class="pay-opt"><input type="radio" name="pay" value="card" checked><span><strong>Credit / debit card</strong><small>Visa, Mastercard</small></span></label>
+        <label class="pay-opt"><input type="radio" name="pay" value="fpx"><span><strong>FPX online banking</strong><small>Pay directly from your Malaysian bank</small></span></label>
+        <label class="pay-opt"><input type="radio" name="pay" value="cod"><span><strong>Cash on delivery</strong><small>Pay when your parcel arrives</small></span></label>
+
+        <div id="card-fields">
+          <div class="field"><label for="cardnum">Card number</label><input id="cardnum" name="cardnum" type="text" inputmode="numeric" autocomplete="off" placeholder="1234 5678 9012 3456"><div class="err" id="err-cardnum"></div></div>
+          <div class="row2">
+            <div class="field"><label for="expiry">Expiry (MM/YY)</label><input id="expiry" name="expiry" type="text" autocomplete="off" placeholder="08/28"><div class="err" id="err-expiry"></div></div>
+            <div class="field"><label for="cvc">CVC</label><input id="cvc" name="cvc" type="text" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="123"><div class="err" id="err-cvc"></div></div>
+          </div>
+          <p class="demo-note">Demo checkout: card details are only checked for format and are never sent or stored.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order summary + Place order button are drawn here -->
+    <aside class="summary" id="summary" data-mode="checkout"></aside>
+  </form>
+</div></section>
+</main>
+
+<footer class="site"><div class="container">
+  <div class="foot-grid">
+    <div><a href="index.html" class="logo"><span class="logo-mark">A</span>Aspec</a><p>Premium computer accessories for people who care about their setup.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="products.html#keyboards">Keyboards</a></li><li><a href="products.html#mice">Mice</a></li><li><a href="products.html#audio">Audio</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>hello@aspec.my</li><li>+60 7-123 4567</li><li>Mon–Fri, 9am–6pm</li></ul></div>
+  </div>
+  <div class="copy"><span>© <span class="year">2026</span> Aspec. All rights reserved.</span><span>Made for your desk.</span></div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
